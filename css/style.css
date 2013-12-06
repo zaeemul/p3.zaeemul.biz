@@ -48,7 +48,7 @@
 			text-decoration: none;
 		}
 	
-	h1, h2, h3, h4, h5
+	h1, h2, h3, h4, h5, h6
 	{
 		color: #444;
 		font-weight: 800;
@@ -235,7 +235,19 @@
 			margin: 0;
 		}
 
+	footer
+	{
+		margin: 2.5em 0 0 0;
+	}
 	
+	.box
+	{
+		background: #fff;
+		border-radius: 6px;
+		box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.015);
+		box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.05);
+	}
+
 /*********************************************************************************/
 /* Icons                                                                         */
 /* Powered by Font Awesome by Dave Gandy | http://fontawesome.io                 */
@@ -793,3 +805,25 @@
 		position: relative;
 	}
 	
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+	}
+	
+		#footer a
+		{
+			color: inherit;
+		}
+	
+	#copyright
+	{
+		color: #aaa;
+	}
+	
+		#copyright a
+		{
+			color: inherit;
+		}

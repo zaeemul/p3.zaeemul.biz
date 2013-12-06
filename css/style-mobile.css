@@ -88,7 +88,11 @@
 			margin: 0;
 		}
 
-			
+			.box-feature .image img
+			{
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+			}
 
 /*********************************************************************************/
 /* Widgets                                                                       */
@@ -113,7 +117,11 @@
 			padding: 1em 0 0 0.5em;
 		}
 
-		
+		.widget-thumbnails .row:first-child .x,
+		.widget-thumbnails .row:first-child .y
+		{
+			padding-top: 0;
+		}	
 
 /*********************************************************************************/
 /* Mobile UI                                                                     */
@@ -181,7 +189,10 @@
 			font-weight: 800;
 		}
 		
-			
+			#navPanel .link:first-child
+			{
+				border-top: 0;
+			}
 
 /*********************************************************************************/
 /* Wrappers                                                                      */
@@ -295,3 +306,31 @@
 			margin-bottom: 3em !important;
 		}
 
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+	}
+
+		#footer section
+		{
+			border-bottom: solid 1px #ccc;
+			padding-bottom: 2em;
+			margin-bottom: 2em !important;
+		}
+		
+			#footer section.last
+			{
+				padding-bottom: 0;
+				border-bottom: 0;
+				margin-bottom: 0 !important;
+			}
+
+	#copyright
+	{
+		padding: 2em 0 0 0;
+		border-top: solid 1px #ccc;
+		margin: 4em 0 0 0;
+	}

@@ -72,8 +72,15 @@
                                 </ul>
                             </div>
                         </div>
-                    </div/>
+                    </div>
 
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<br/>
 <!-- Main Wrapper -->
 <div id="main-wrapper">
     <div class="container">
@@ -87,10 +94,10 @@
                             <h3>Tweak Size</h3>
                             <input type="radio" name="maxCharSelect" id="twitter" value="140" onClick="selctionChange()"
                                    checked="checked"/>
-                            <label for="twitter">Twitter Character </label><br/>
-                            <input type="radio" name="maxCharSelect" id="facebook" value="100"
+                            <label for="twitter">Twitter 140 Character Limit</label><br/>
+                            <input type="radio" name="maxCharSelect" id="facebook" value="160"
                                    onClick="selctionChange()"/>
-                            <label for="facebook">Facebook 100 Character Limit</label><br/>
+                            <label for="facebook">Facebook 160 Character Limit</label><br/>
                             <input type="radio" name="maxCharSelect" id="other" value="0" onClick="selctionChange()"/>
                             <label for="other">
                                 Other
@@ -101,11 +108,11 @@
                             <!--CHUNK Breaking-->
                             <h3>Chunk Break </h3>
                             <input type="radio" name="chunxtBreak" id="random" value="r"
-                                   onClick="chunks(document.myForm.Message, document.myForm.packets, false)"
+                                   onClick="chunks(document.myForm.myMessage, document.myForm.packets, false)"
                                    checked="checked"/>
                             <label for="random">Random Break</label>
                             <input type="radio" name="chunxtBreak" id="punctuation" value="p"
-                                   onClick="chunks(document.myForm.Message, document.myForm.packets, false)"/>
+                                   onClick="chunks(document.myForm.myMessage, document.myForm.packets, false)"/>
                             <label for="punctuation">Punctuation Break</label>
                             <br/>
                             <br/>
@@ -118,8 +125,8 @@
                 <div class="8u">
                     <div id="tweakkers">
                         <h3>Original Text</h3>
-                        <textarea onKeyUp="chunks(document.myForm.Message, document.myForm.packets, true)"
-                                  name="myMessage" onFocus="changeText()" onBlur="changeText()" style="margin: 2px;width: 703px;height: 286px;resize: none;">Paste your text here to break up into 100 character tweets...</textarea><br/>
+                        <textarea onKeyUp="chunks(document.myForm.myMessage, document.myForm.packets, true)"
+                                  name="myMessage" onFocus="changeText()" onBlur="changeText()" style="margin: 2px;width: 703px;height: 286px;resize: none;">Paste your text here to break up into 140 character tweets...</textarea><br/>
                         <br/>
 
                         <h3 class="link_simple colored_border">Tweakker Text</h3>
@@ -167,8 +174,8 @@
                         <li><a href="#" class="fa fa-dribbble solo"><span>Dribbble</span></a></li>
                         <li><a href="#" class="fa fa-google-plus solo"><span>Google+</span></a></li>
                     </ul>
-                    <p>address<br/>
-                        toronto<br/>
+                    <p>1234 New Road<br/>
+                        New City, New State 00000-0000<br/>
                         (800) 555-0000</p>
                 </section>
 
@@ -177,7 +184,7 @@
         <div class="row">
             <div class="12u">
                 <div id="copyright">
-                    Text Tweakker &copy; 2013. All rights reserved.
+                    ZH Team Tweakker &copy; 2013. All rights reserved.
                 </div>
             </div>
         </div>
